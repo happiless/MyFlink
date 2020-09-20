@@ -20,71 +20,26 @@
   </properties>
 
   <dependencies>
-    <!-- Flink 依赖 -->
-    <dependency>
-      <groupId>org.apache.flink</groupId>
-      <artifactId>flink-java</artifactId>
-      <version>${flink.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.flink</groupId>
-      <artifactId>flink-streaming-java_2.11</artifactId>
-      <version>${flink.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.flink</groupId>
-      <artifactId>flink-streaming-scala_2.11</artifactId>
-      <version>${flink.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.flink</groupId>
-      <artifactId>flink-clients_2.11</artifactId>
-      <version>${flink.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.flink</groupId>
-      <artifactId>flink-connector-wikiedits_2.11</artifactId>
-      <version>${flink.version}</version>
-    </dependency>
-    <!-- Flink Kafka连接器的依赖 -->
-    <dependency>
-      <groupId>org.apache.flink</groupId>
-      <artifactId>flink-connector-kafka-0.11_2.11</artifactId>
-      <version>${flink.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
-    </dependency>
-
-    <!-- Flink Scala2.11 版本 -->
     <dependency>
       <groupId>org.apache.flink</groupId>
       <artifactId>flink-scala_2.11</artifactId>
       <version>1.9.1</version>
     </dependency>
-
+    <dependency>
+      <groupId>org.apache.flink</groupId>
+      <artifactId>flink-streaming-scala_2.11</artifactId>
+      <version>1.9.1</version>
+    </dependency>
     <dependency>
       <groupId>org.apache.hadoop</groupId>
       <artifactId>hadoop-common</artifactId>
-      <version>2.6.5</version>
+      <version>2.7.2</version>
     </dependency>
-
     <dependency>
       <groupId>org.apache.hadoop</groupId>
       <artifactId>hadoop-client</artifactId>
-      <version>2.6.5</version>
+      <version>2.7.2</version>
     </dependency>
-
-    <dependency>
-      <groupId>mysql</groupId>
-      <artifactId>mysql-connector-java</artifactId>
-      <version>5.1.44</version>
-    </dependency>
-
-
     <dependency>
       <groupId>org.apache.flink</groupId>
       <artifactId>flink-connector-kafka_2.11</artifactId>
@@ -95,51 +50,36 @@
       <artifactId>kafka-clients</artifactId>
       <version>0.11.0.3</version>
     </dependency>
-
+    <dependency>
+      <groupId>org.apache.flink</groupId>
+      <artifactId>flink-connector-filesystem_2.11</artifactId>
+      <version>1.9.1</version>
+    </dependency>
     <dependency>
       <groupId>org.apache.bahir</groupId>
       <artifactId>flink-connector-redis_2.11</artifactId>
       <version>1.0</version>
     </dependency>
-
-    <!--<dependency>-->
-    <!--<groupId>org.scala-lang</groupId>-->
-    <!--<artifactId>scala-library</artifactId>-->
-    <!--<version>2.11.12</version>-->
-    <!--</dependency>-->
-
-    <!-- log4j 和slf4j 包,如果在控制台不想看到日志，可以将下面的包注释掉-->
-    <!--<dependency>-->
-    <!--<groupId>org.slf4j</groupId>-->
-    <!--<artifactId>slf4j-log4j12</artifactId>-->
-    <!--<version>1.7.25</version>-->
-    <!--<scope>test</scope>-->
-    <!--</dependency>-->
-    <!--<dependency>-->
-    <!--<groupId>log4j</groupId>-->
-    <!--<artifactId>log4j</artifactId>-->
-    <!--<version>1.2.17</version>-->
-    <!--</dependency>-->
-    <!--<dependency>-->
-    <!--<groupId>org.slf4j</groupId>-->
-    <!--<artifactId>slf4j-api</artifactId>-->
-    <!--<version>1.7.25</version>-->
-    <!--</dependency>-->
-    <!--<dependency>-->
-    <!--<groupId>org.slf4j</groupId>-->
-    <!--<artifactId>slf4j-nop</artifactId>-->
-    <!--<version>1.7.25</version>-->
-    <!--<scope>test</scope>-->
-    <!--</dependency>-->
-    <!--<dependency>-->
-    <!--<groupId>org.slf4j</groupId>-->
-    <!--<artifactId>slf4j-simple</artifactId>-->
-    <!--<version>1.7.5</version>-->
-    <!--</dependency>-->
-
-
-
-
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.44</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.flink</groupId>
+      <artifactId>flink-table-planner_2.11</artifactId>
+      <version>1.9.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.flink</groupId>
+      <artifactId>flink-table-api-scala-bridge_2.11</artifactId>
+      <version>1.9.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.flink</groupId>
+      <artifactId>flink-cep-scala_2.11</artifactId>
+      <version>1.9.1</version>
+    </dependency>
   </dependencies>
 
   <build>
